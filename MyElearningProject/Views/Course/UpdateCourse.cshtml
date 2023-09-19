@@ -1,0 +1,18 @@
+﻿@model MyElearningProject.DAL.Entities.Course
+@{
+    ViewBag.Title = "UpdateCourse";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>Kurs Güncelleme Sayfası</h2>
+
+<form method="post">
+    @Html.HiddenFor(x => x.CourseID)
+    <label>Kurs Adını Giriniz </label>
+    @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+    <label>Kurs Fiyatını Giriniz</label>
+    @Html.TextBoxFor(x => x.Price, new { @class = "form-control" })
+    <label>Kurs Süresini Giriniz</label>
+    @Html.TextBoxFor(x => x.Time, new { @class = "form-control" })
+</form>
+

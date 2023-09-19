@@ -129,7 +129,9 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AdminLayoutController.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
+    <Compile Include="Controllers\CourseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\InstructorAnalysisController.cs" />
     <Compile Include="Controllers\InstructorController.cs" />
     <Compile Include="DAL\Context\ELearningContext.cs" />
     <Compile Include="DAL\Entities\Category.cs" />
@@ -145,6 +147,10 @@
     <Compile Include="Migrations\202309121904384_mig_add_imageurl_instructor.cs" />
     <Compile Include="Migrations\202309121904384_mig_add_imageurl_instructor.designer.cs">
       <DependentUpon>202309121904384_mig_add_imageurl_instructor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202309192008126_mig_ınstructor_new.cs" />
+    <Compile Include="Migrations\202309192008126_mig_ınstructor_new.designer.cs">
+      <DependentUpon>202309192008126_mig_ınstructor_new.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -828,6 +834,10 @@
     <Content Include="Views\Instructor\Index.cshtml" />
     <Content Include="Views\Instructor\AddInstructor.cshtml" />
     <Content Include="Views\Instructor\UpdateInstructor.cshtml" />
+    <Content Include="Views\Course\UpdateCourse.cshtml" />
+    <Content Include="Views\InstructorAnalysis\Index.cshtml" />
+    <Content Include="Views\InstructorAnalysis\InstructorPanelPartial.cshtml" />
+    <Content Include="Views\InstructorAnalysis\CommentPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -866,6 +876,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202309121904384_mig_add_imageurl_instructor.resx">
       <DependentUpon>202309121904384_mig_add_imageurl_instructor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202309192008126_mig_ınstructor_new.resx">
+      <DependentUpon>202309192008126_mig_ınstructor_new.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
