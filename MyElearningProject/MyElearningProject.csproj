@@ -135,7 +135,11 @@
     <Compile Include="Controllers\InstructorController.cs" />
     <Compile Include="DAL\Context\ELearningContext.cs" />
     <Compile Include="DAL\Entities\Category.cs" />
+    <Compile Include="DAL\Entities\Comment.cs" />
+    <Compile Include="DAL\Entities\Course.cs" />
+    <Compile Include="DAL\Entities\CourseRegister.cs" />
     <Compile Include="DAL\Entities\Instructor.cs" />
+    <Compile Include="DAL\Entities\Student.cs" />
     <Compile Include="DAL\Entities\Testimonial.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -151,6 +155,22 @@
     <Compile Include="Migrations\202309192008126_mig_ınstructor_new.cs" />
     <Compile Include="Migrations\202309192008126_mig_ınstructor_new.designer.cs">
       <DependentUpon>202309192008126_mig_ınstructor_new.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202309251926518_mig_add_comment.cs" />
+    <Compile Include="Migrations\202309251926518_mig_add_comment.designer.cs">
+      <DependentUpon>202309251926518_mig_add_comment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202309252010573_mig_course_courseregister_student.cs" />
+    <Compile Include="Migrations\202309252010573_mig_course_courseregister_student.designer.cs">
+      <DependentUpon>202309252010573_mig_course_courseregister_student.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202309252136203_mig_course_Description.cs" />
+    <Compile Include="Migrations\202309252136203_mig_course_Description.designer.cs">
+      <DependentUpon>202309252136203_mig_course_Description.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202309252138125_mig_string.cs" />
+    <Compile Include="Migrations\202309252138125_mig_string.designer.cs">
+      <DependentUpon>202309252138125_mig_string.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -838,6 +858,7 @@
     <Content Include="Views\InstructorAnalysis\Index.cshtml" />
     <Content Include="Views\InstructorAnalysis\InstructorPanelPartial.cshtml" />
     <Content Include="Views\InstructorAnalysis\CommentPartial.cshtml" />
+    <Content Include="Views\InstructorAnalysis\CourseListByInstructor.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -879,6 +900,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202309192008126_mig_ınstructor_new.resx">
       <DependentUpon>202309192008126_mig_ınstructor_new.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202309251926518_mig_add_comment.resx">
+      <DependentUpon>202309251926518_mig_add_comment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202309252010573_mig_course_courseregister_student.resx">
+      <DependentUpon>202309252010573_mig_course_courseregister_student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202309252136203_mig_course_Description.resx">
+      <DependentUpon>202309252136203_mig_course_Description.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202309252138125_mig_string.resx">
+      <DependentUpon>202309252138125_mig_string.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
