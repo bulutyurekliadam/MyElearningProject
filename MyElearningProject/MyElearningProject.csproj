@@ -133,12 +133,14 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\InstructorAnalysisController.cs" />
     <Compile Include="Controllers\InstructorController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="DAL\Context\ELearningContext.cs" />
     <Compile Include="DAL\Entities\Category.cs" />
     <Compile Include="DAL\Entities\Comment.cs" />
     <Compile Include="DAL\Entities\Course.cs" />
     <Compile Include="DAL\Entities\CourseRegister.cs" />
     <Compile Include="DAL\Entities\Instructor.cs" />
+    <Compile Include="DAL\Entities\Review.cs" />
     <Compile Include="DAL\Entities\Student.cs" />
     <Compile Include="DAL\Entities\Testimonial.cs" />
     <Compile Include="Global.asax.cs">
@@ -171,6 +173,10 @@
     <Compile Include="Migrations\202309252138125_mig_string.cs" />
     <Compile Include="Migrations\202309252138125_mig_string.designer.cs">
       <DependentUpon>202309252138125_mig_string.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202309301316592_mig_add_review.cs" />
+    <Compile Include="Migrations\202309301316592_mig_add_review.designer.cs">
+      <DependentUpon>202309301316592_mig_add_review.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -859,6 +865,7 @@
     <Content Include="Views\InstructorAnalysis\InstructorPanelPartial.cshtml" />
     <Content Include="Views\InstructorAnalysis\CommentPartial.cshtml" />
     <Content Include="Views\InstructorAnalysis\CourseListByInstructor.cshtml" />
+    <Content Include="Views\Login\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -912,6 +919,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202309252138125_mig_string.resx">
       <DependentUpon>202309252138125_mig_string.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202309301316592_mig_add_review.resx">
+      <DependentUpon>202309301316592_mig_add_review.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
